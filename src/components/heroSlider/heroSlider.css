@@ -1,0 +1,221 @@
+.slider-container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.linearbg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,0.4));
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .list .item {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.slider .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .list .item .detail {
+    position: absolute;
+    top: 20%;
+    width: 1200px;
+    max-width: 80%;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0 5px 10px rgba(35, 35, 35);
+}
+.slider .list .item .detail .title {
+    font-size: 2.5rem;
+    color: white;
+    font-family: var(--poppins);
+    font-weight: bold;
+}
+.slider .list .item .detail .desc {
+    font-size: 1rem;
+    color: white;
+    font-family: var(--poppins);
+}
+
+.thumbnail {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 10;
+    display: flex;
+    gap: 20px;
+}
+
+.thumbnail .item {
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.thumbnail .item img {
+    box-shadow: 5px 5px 15px black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.arrow {
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    z-index: 100;
+}
+
+.slider .list .item:nth-child(1) {
+    z-index: 1;
+}
+.slider .list .item:nth-child(1) .title,
+.slider .list .item:nth-child(1) .desc {
+    transform: translateY(50px);
+    filter: blur(50px);
+    opacity: 0;
+    animation: showDetail 0.5s 1s linear 1 forwards;
+}
+@keyframes showDetail {
+    to {
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.slider.next .list .item:nth-child(1) img {
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    border-radius: 10px;
+    animation: growImg 0.5s linear 1 forwards;
+}
+@keyframes growImg {
+    to {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+
+.slider.next .thumbnail .item:nth-last-child(1) {
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail 0.5s linear 1 forwards;
+}
+@keyframes showThumbnail {
+    to {
+        width: 150px;
+        opacity: 1;
+
+    }
+}
+
+.slider.next .thumbnail {
+    transform: translateX(150px);
+    animation: transformThumbnail 0.5s linear 1 forwards;
+}
+@keyframes transformThumbnail {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slider.prev .list .item:nth-child(2) {
+    z-index: 2;
+}
+.slider.prev .list .item:nth-child(2) img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: shrinkImg 0.5s linear 1 forwards;
+}
+@keyframes shrinkImg {
+    to {
+        width: 150px;
+        height: 220px;
+        border-radius: 10px;
+        left: 50%;
+        bottom: 50px;
+    }
+}
+
+.slider.prev .thumbnail .item:nth-child(1) {
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+.slider.prev .list .item:nth-child(2) .title,
+.slider.prev .list .item:nth-child(2) .desc {
+    animation: hideDetail 0.5s 1s linear 1 forwards;
+}
+
+@keyframes hideDetail {
+    to {
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.slider.next .arrow #next, .slider.next .arrow #prev,
+.slider.prev .arrow #next, .slider.prev .arrow #prev {
+    pointer-events: none;
+}
+
+.loading-bar {
+    width: 0;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.slider.next .loading-bar,
+.slider.prev .loading-bar {
+    width: 100%;
+    animation: loadingTime 1.5s linear 1 forwards;
+}
+@keyframes loadingTime {
+    to {
+        width: 0;
+    }
+}

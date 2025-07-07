@@ -1,0 +1,14 @@
+.box-item-input {
+    width: 400px;
+    max-width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    font: 0.9rem sans-serif;
+    margin-top: 5px;
+    overflow: scroll;
+}

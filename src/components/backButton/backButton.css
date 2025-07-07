@@ -1,0 +1,12 @@
+.back {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}

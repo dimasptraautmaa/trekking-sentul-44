@@ -1,0 +1,96 @@
+.detail-paket {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    /* background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('/img/alam1.jpg'); */
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    padding: 0px 10px;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 37%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    left: 0;
+    z-index: 10;
+}
+
+.detail-paket-container {
+    /* border-left: 2px solid var(--primary); */
+    width: 550px;
+    max-width: 100%;
+    padding: 40px 10px;
+    box-sizing: border-box;
+    font-family: var(--quicksand);
+}
+.detail-paket-container.glass {
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+.detail-paket-container::-webkit-scrollbar {
+  display: none;
+}
+
+#firstShow {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: showUp 0.3s linear 0.7s forwards;
+}
+
+#secondShow {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: showUp 0.3s linear 2s forwards;
+}
+
+#thirdShow {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: showUp 0.3s linear 3s forwards;
+}
+
+#lastShow {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: showUp 0.3s linear 4s forwards;
+}
+
+.abs-button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 95px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    z-index: 100;
+    box-shadow: 7px 7px 20px black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    gap: 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes showUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .detail-paket {
+        flex-direction: column;
+    }
+
+    .detail-paket-container {
+        padding-bottom: 20px;
+    }
+}

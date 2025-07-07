@@ -1,0 +1,130 @@
+.navmobile {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: unset;
+    z-index: 10;
+    transform-origin: top right;
+    transition: 0.3s linear;
+    box-sizing: border-box;
+    padding: 25px 0;
+    overflow: hidden auto;
+    background-color: var(--background);
+    display: none;
+}
+.navmobile.glass {
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+.navmobile.show {
+    display: block;
+    height: 100%;
+    animation: navmobile 0.3s ease-in-out;
+}
+@keyframes navmobile {
+    0%{
+        opacity: 0;
+    }
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.mid-nav-route {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.nav-route-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.box-route-item {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--prime);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--yellow);
+}
+
+.text-route-item {
+    color: var(--yellow);
+    opacity: 0.7;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+}
+
+.mid-nav-notification {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.nav-notification {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 10px;
+    overflow: hidden scroll;
+}
+
+.notification-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid var(--prime);
+    padding-bottom: 5px;
+}
+
+.notification-item-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bot-nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 45px;
+}
+
+.bot-nav-item {
+    border: 1px solid var(--prime);
+    border-radius: 4px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+}

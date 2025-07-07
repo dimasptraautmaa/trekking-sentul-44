@@ -1,0 +1,47 @@
+.tag-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Add spacing between tags */
+    margin-bottom: 8px; /* Add spacing between tags and input */
+  }
+  
+  .tag {
+    background-color: #e0e4e8;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    font-family: var(--poppins);
+    font-size: 0.75rem;
+    align-items: center;
+  }
+  
+  .remove-btn {
+    background: none;
+    border: none;
+    color: #888;
+    margin-left: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .tag-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex-grow: 1;
+    width: 100%; /* Make the input take the full width */
+  }
+  

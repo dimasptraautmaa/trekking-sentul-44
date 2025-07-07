@@ -1,0 +1,299 @@
+.swiper {
+  width: 100%;
+}
+
+.swiper-paket {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: var(--quicksand);
+  position: relative;
+}
+
+.swiper-kotak-mark {
+    padding: 3px 30px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    color: #202020;
+    font-weight: bold;
+    background-color: var(--green);
+    font-family: var(--quicksand);
+    font-size: 1rem;
+    width: max-content;
+    margin: auto;
+}
+
+.circle.glass {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.flex-gap-inline {
+    display: flex;
+    gap: 5px;
+    align-items: top;
+}
+
+.swiper-kotak {
+    width: 45%;
+    height: 550px;
+    min-height: 450px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    display: none;
+    justify-content: space-between;
+    overflow-y: scroll;
+    flex-direction: column;
+    gap: 20px;
+}
+.swiper-kotak::-webkit-scrollbar {
+  display: none;
+}
+
+.swiper-kotak-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.swiper-kotak-jarak {
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-size: 1.2rem;
+}
+
+.swiper-kotak-harga {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+}
+.swiper-kotak-harga div:nth-child(1) {
+    font-size: 1rem;
+    color: var(--primary);
+    font-family: var(--poppins);
+    font-weight: 100;
+}
+.swiper-kotak-harga div:nth-child(2) {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--primary);
+    /* color: red; */
+}
+.swiper-kotak-harga div:nth-child(3) {
+    font-size: 1.1rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.box-container {
+    max-width: 100%;
+    width: 700px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.box-large {
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 850px;
+    height: max-content;
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px 20px;
+}
+
+.box-small {
+    width: 200px;
+    height: 180px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.swiper-kotak-rute {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--primary);
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.swiper-konten {
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    width: 70%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+.swiper-konten-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.swiper-konten-jarak {
+    font-size: 1.2rem;
+}
+
+.swiper-konten-desc {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.paket-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.paket-card-level {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 1rem;
+}
+
+.paket-card-wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: auto;
+}
+
+.paket-card-title {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 12px;
+    color: white;
+    font-family: var(--poppins);
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.paket-card-title div:nth-child(1) {
+    color: var(--green);
+}
+
+.paket-card {
+    width: 300px;
+    height: 300px;
+    min-width: 140px;
+    position: relative;
+    animation: paketCard 0.5s ease-in-out;
+    flex: 1;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@keyframes paketCard {
+    0% {
+        opacity: 0;
+    }
+}
+
+.paket-card img {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .swiper-paket{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .swiper-konten {
+        width: 100%;
+    }
+
+    .swiper-konten-desc {
+        margin-top: 5px;
+    }
+
+
+    .swiper-kotak {
+        width: 100%;
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 550px) {
+    .box-container {
+        flex-direction: column;
+    }
+
+    .box-large {
+        border-radius: 0px;
+    }
+
+    .box-small {
+        width: 100%;
+        height: 150px;
+        border-radius: 0px;
+    }
+
+    .paket-card-level {
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 465px) {
+    .swiper-paket {
+        padding: 40px 10px;
+    }
+}
