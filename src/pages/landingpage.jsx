@@ -1,5 +1,5 @@
 import React from 'react'
-import alam1 from "/img/alam1.jpg"
+import alam1 from "/img/alam1.webp"
 import Hero from '../components/hero/hero'
 import Paket from '../components/paket/paket'
 import Navbar from '../components/navbar/navbar'

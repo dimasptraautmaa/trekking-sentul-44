@@ -59,7 +59,7 @@ const SwiperCard = () => {
                             }}
                         >
                             <img
-                                src={`img/img${i + 1}.jpeg`}
+                                src={`img/img${i + 1}.webp`}
                                 alt={`Galeri trekking Sentul foto ${i + 1}`}
                             />
                         </SwiperSlide>
@@ -108,7 +108,7 @@ const SwiperCard = () => {
                             }}
                         >
                             <img
-                                src={`img/img${i + 10}.jpeg`}
+                                src={`img/img${i + 10}.webp`}
                                 alt={`Galeri trekking Sentul foto ${i + 11}`}
                             />
                         </SwiperSlide>
