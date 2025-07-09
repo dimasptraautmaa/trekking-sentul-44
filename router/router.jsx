@@ -10,6 +10,7 @@ import Google from "../src/pages/auth/google";
 import Login from "../src/pages/auth/login";
 import DetailPaket from "../src/components/detail/detailPaket";
 import ImagePreview from "../utils/imagePreview";
+import Type from "../src/pages/details/type";
 
 const Router = () => {
 
@@ -68,6 +69,7 @@ const Router = () => {
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/dashboard" element={<Dashborad/>}/>
+          <Route path="/detail/:type" element={<Type/>}/>
           <Route path="/paket/detail" element={<DetailPaket/>}/> 
           <Route path="/preview/image" element={<ImagePreview/>}/>
           <Route path="/auth/google/callback" element={<Google/>}/>

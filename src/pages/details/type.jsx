@@ -1,17 +1,30 @@
 import React from 'react';
+import trekData from "../../../data/trekData"
 import { PhotoSlider } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import "./detailPaket.css";
 
-const DetailPaket = () => {
+const Type = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const i = location.state;
+    const { type } = useParams();
+    
+    const typeMap = {
+        "easy-a" : 0,
+        "easy-b" : 1,
+        "easy-c" : 2,
+        "easy-d" : 3,
+        "medium-a" : 4,
+        "medium-b" : 5,
+        "medium-c" : 6,
+        "medium-d" : 7,
+        "semi-extreme" : 8,
+        "extreme" : 9,
+    }
 
-    if (!i) return window.location.href = '/';
-
+    const i = trekData[typeMap[type]] || null;
+    if (!i) return window.location.href = "/"
     const images = i.img;
     const chat = `https://wa.me/6285880762819?text=${i.msg}`;
 
@@ -199,4 +212,4 @@ const DetailPaket = () => {
     );
 };
 
-export default DetailPaket;
+export default Type;

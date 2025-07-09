@@ -94,7 +94,7 @@ const Paket = () => {
             </section>
             <section id='paket' className='page' style={{ backgroundColor: 'transparent', padding: '0 10px' }}>
                 <h2 style={{ fontFamily: 'var(--quicksand)', fontSize: '1.8rem', color: 'white', textAlign: 'center', marginTop: '40px' }}>
-                    Paket Trekking Sentul
+                    PAKET TREKKKING SENTUL
                 </h2>
                 <h3 style={{ fontFamily: 'var(--poppins)', fontSize: '1rem', color: 'white', textAlign: 'center', marginBottom: '40px', fontWeight: '400' }}>
                     Tersedia mulai dari easy sampai extreme, cocok untuk pemula dan petualang sejati!
@@ -132,8 +132,8 @@ const Paket = () => {
                         return(
                             <SwiperSlide key={k} className='swiper-paket' style={{paddingTop: '0'}}>
                                 <div className='swiper-konten'>
-                                    <h3 className='swiper-konten-title'><span style={{color: i.color}}>Paket Trekking</span></h3>
-                                    <h4 className='swiper-konten-title'><span style={{color: i.color}}>{i.title}</span></h4>
+                                    <h3 className='swiper-konten-title'><span style={{color: i.color}}>PAKET TREKKING</span></h3>
+                                    <h4 className='swiper-konten-title'><span style={{color: i.color}}>{i.title.split(" ")[1]}</span></h4>
                                     {i.type && 
                                     <div style={{ width: 'max-content', padding: '5px 30px', backgroundColor: i.color, fontFamily: 'var(--quicksand)', fontWeight: 'bold', color: 'white', fontSize: '1.1rem', borderRadius: '50px', boxSizing: 'border-box' }}>
                                         {i.type}
@@ -142,7 +142,7 @@ const Paket = () => {
                                         <div>Mulai dari</div>
                                         <div>{i.harga}</div>
                                     </div>
-                                    <div onClick={() => navigate('/paket/detail', { state: i })} className='button' style={{ width: '200px', backgroundColor: i.color, marginTop: '10px', gap: '10px', fontWeight: '550', fontSize: '0.85rem' }}>
+                                    <div onClick={() => navigate(`detail/${i.level}`, { state: i })} className='button' style={{ width: '200px', backgroundColor: i.color, marginTop: '10px', gap: '10px', fontWeight: '550', fontSize: '0.85rem' }}>
                                         Detail paket
                                         <div className='fas fa-arrow-right fa-md'></div>
                                     </div>

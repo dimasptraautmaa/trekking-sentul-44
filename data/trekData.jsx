@@ -1,6 +1,7 @@
 const trekData = [
     {
         type: "Jalur A",
+        level: "easy-a",
         color: "var(--green)",
         title: 'TREKKING EASY',
         waktu: "2-3 Jam",
@@ -38,6 +39,7 @@ const trekData = [
 
     {
         type: "Jalur B",
+        level: "easy-b",
         color: "var(--green)",
         title: 'TREKKING EASY',
         waktu: "2-3 Jam",
@@ -76,6 +78,7 @@ const trekData = [
     },
     {
         type: "Jalur C",
+        level: "easy-c",
         color: "var(--green)",
         title: 'TREKKING EASY',
         waktu: "3-4 Jam",
@@ -113,6 +116,7 @@ const trekData = [
     },
     {
         type: "Jalur D",
+        level: "easy-d",
         color: "var(--green)",
         title: 'TREKKING EASY',
         waktu: "2-3 Jam",
@@ -151,6 +155,7 @@ const trekData = [
     // MEDIUM TREK \\
     {
         type: "Jalur A",
+        level: "medium-a",
         color: "var(--yellow)",
         title: 'TREKKING MEDIUM',
         waktu: "3-4 Jam",
@@ -188,6 +193,7 @@ const trekData = [
     },
     {
         type: "Jalur B",
+        level: "medium-b",
         color: "var(--yellow)",
         title: 'TREKKING MEDIUM',
         waktu: "3-4 Jam",
@@ -231,6 +237,7 @@ const trekData = [
     },
     {
         type: "Jalur C",
+        level: "medium-c",
         color: "var(--yellow)",
         title: 'TREKKING MEDIUM',
         waktu: "4-5 Jam",
@@ -274,6 +281,7 @@ const trekData = [
     },
     {
         type: "Jalur D",
+        level: "medium-d",
         color: "var(--yellow)",
         title: 'TREKKING MEDIUM',
         waktu: "4-5 Jam",
@@ -314,6 +322,7 @@ const trekData = [
     // SEMI EXTREME \\
     {
         type: "",
+        level: "semi-extreme",
         color: "var(--oren)",
         title: 'TREKKING SEMI-EXTREME',
         waktu: "5-6 Jam",
@@ -352,6 +361,7 @@ const trekData = [
     },
     {
         type: "",
+        level: "extreme",
         color: "var(--red)",
         title: 'TREKKING EXTREME',
         waktu: "6-7 Jam",
