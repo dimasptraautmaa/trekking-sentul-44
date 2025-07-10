@@ -94,7 +94,7 @@ const Paket = () => {
             </section>
             <section id='paket' className='page' style={{ backgroundColor: 'transparent', padding: '0 10px' }}>
                 <h2 style={{ fontFamily: 'var(--quicksand)', fontSize: '1.8rem', color: 'white', textAlign: 'center', marginTop: '40px' }}>
-                    PAKET TREKKKING SENTUL
+                    PAKET TREKKING SENTUL
                 </h2>
                 <h3 style={{ fontFamily: 'var(--poppins)', fontSize: '1rem', color: 'white', textAlign: 'center', marginBottom: '40px', fontWeight: '400' }}>
                     Tersedia mulai dari easy sampai extreme, cocok untuk pemula dan petualang sejati!
