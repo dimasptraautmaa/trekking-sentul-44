@@ -24,80 +24,160 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Trekking Sentul 44",
-      "url": "https://trekkingsentul44.com",
-      "logo": "https://trekkingsentul44.com/img/logo.png"
-    }
-    </script>
-    <script type="application/ld+json"> 
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "itemListElement": [
+      "@graph": [
         {
-          "@type": "SiteNavigationElement",
-          "position": 1,
-          "name": "Paket Trekking Sentul Easy Jalur A",
-          "url": "https://trekkingsentul44.com/detail/easy-a"
+          "@type": ["TravelAgency", "Organization"],
+          "@id": "https://trekkingsentul44.com/#organization",
+          "name": "Trekking Sentul 44",
+          "url": "https://trekkingsentul44.com",
+          "email": "ibdafauzan85@gmail.com",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://trekkingsentul44.com/#logo",
+            "url": "https://trekkingsentul44.com/img/logo.png",
+            "contentUrl": "https://trekkingsentul44.com/img/logo.png",
+            "caption": "Trekking Sentul 44",
+            "inLanguage": "id",
+            "width": "969",
+            "height": "968"
+          },
+          "image": {
+            "@id": "https://trekkingsentul44.com/#logo"
+          },
+          "priceRange": "Rp. 150.000",
+          "openingHours": ["Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-22:00"],
+          "telephone": "+6285880762819"
         },
         {
-          "@type": "SiteNavigationElement",
-          "position": 2,
-          "name": "Paket Trekking Sentul Easy Jalur B",
-          "url": "https://trekkingsentul44.com/detail/easy-b"
+          "@type": "WebSite",
+          "@id": "https://trekkingsentul44.com/#website",
+          "url": "https://trekkingsentul44.com",
+          "name": "Trekking Wisata Sentul",
+          "publisher": {
+            "@id": "https://trekkingsentul44.com/#organization"
+          },
+          "inLanguage": "id",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://trekkingsentul44.com/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
         },
         {
-          "@type": "SiteNavigationElement",
-          "position": 3,
-          "name": "Paket Trekking Sentul Easy Jalur C",
-          "url": "https://trekkingsentul44.com/detail/easy-c"
+          "@type": "WebPage",
+          "@id": "https://trekkingsentul44.com/#webpage",
+          "url": "https://trekkingsentul44.com/",
+          "name": "Trekking Sentul | Paket Trekking Sentul | Jasa Trekking Sentul | Trekking Sentul Bogor",
+          "datePublished": "2021-02-09T17:08:37+00:00",
+          "dateModified": "2022-05-01T22:37:49+00:00",
+          "about": {
+            "@id": "https://trekkingsentul44.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://trekkingsentul44.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://trekkingsentul44.com/img/logo.png"
+          },
+          "inLanguage": "id"
         },
         {
-          "@type": "SiteNavigationElement",
-          "position": 4,
-          "name": "Paket Trekking Sentul Easy Jalur D",
-          "url": "https://trekkingsentul44.com/detail/easy-d"
+          "@type": "ImageObject",
+          "@id": "https://trekkingsentul44.com/img/logo.png",
+          "url": "https://trekkingsentul44.com/img/logo.png",
+          "width": "720",
+          "height": "540",
+          "caption": "Curug Leuwi Hejo",
+          "inLanguage": "id"
         },
         {
-          "@type": "SiteNavigationElement",
-          "position": 5,
-          "name": "Paket Trekking Sentul Medium Jalur A",
-          "url": "https://trekkingsentul44.com/detail/medium-a"
+          "@type": "Service",
+          "@id": "https://trekkingsentul44.com/#schema-3450",
+          "name": "Trekking Sentul | Paket Trekking Sentul | Jasa Trekking Sentul | Trekking Sentul Bogor",
+          "description": "Nikmati Serunya Trekking di Sentul Bersama TrekkingSentul 44! Paket Hemat, Rute Beragam, Booking Gampang! Cocok untuk pemula sampai petualang sejati",
+          "serviceType": "Traveling",
+          "offers": {
+            "@type": "Offer",
+            "price": "150000",
+            "priceCurrency": "Rp",
+            "availability": "InStock"
+          },
+          "image": {
+            "@id": "https://trekkingsentul44.com/img/logo.png"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://trekkingsentul44.com/#webpage"
+          }
         },
         {
-          "@type": "SiteNavigationElement",
-          "position": 6,
-          "name": "Paket Trekking Sentul Medium Jalur B",
-          "url": "https://trekkingsentul44.com/detail/medium-b"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "position": 7,
-          "name": "Paket Trekking Sentul Medium Jalur C",
-          "url": "https://trekkingsentul44.com/detail/medium-c"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "position": 8,
-          "name": "Paket Trekking Sentul Medium Jalur D",
-          "url": "https://trekkingsentul44.com/detail/medium-d"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "position": 9,
-          "name": "Paket Trekking Sentul Semi Extreme",
-          "url": "https://trekkingsentul44.com/detail/semi-extreme"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "position": 10,
-          "name": "Paket Trekking Sentul Extreme",
-          "url": "https://trekkingsentul44.com/detail/extreme"
-        },
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "SiteNavigationElement",
+              "position": 1,
+              "name": "Paket Trekking Sentul Easy Jalur A",
+              "url": "https://trekkingsentul44.com/detail/easy-a"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 2,
+              "name": "Paket Trekking Sentul Easy Jalur B",
+              "url": "https://trekkingsentul44.com/detail/easy-b"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 3,
+              "name": "Paket Trekking Sentul Easy Jalur C",
+              "url": "https://trekkingsentul44.com/detail/easy-c"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 4,
+              "name": "Paket Trekking Sentul Easy Jalur D",
+              "url": "https://trekkingsentul44.com/detail/easy-d"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 5,
+              "name": "Paket Trekking Sentul Medium Jalur A",
+              "url": "https://trekkingsentul44.com/detail/medium-a"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 6,
+              "name": "Paket Trekking Sentul Medium Jalur B",
+              "url": "https://trekkingsentul44.com/detail/medium-b"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 7,
+              "name": "Paket Trekking Sentul Medium Jalur C",
+              "url": "https://trekkingsentul44.com/detail/medium-c"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 8,
+              "name": "Paket Trekking Sentul Medium Jalur D",
+              "url": "https://trekkingsentul44.com/detail/medium-d"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 9,
+              "name": "Paket Trekking Sentul Semi Extreme",
+              "url": "https://trekkingsentul44.com/detail/semi-extreme"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 10,
+              "name": "Paket Trekking Sentul Extreme",
+              "url": "https://trekkingsentul44.com/detail/extreme"
+            }
+          ]
+        }
       ]
     }
     </script>
+
 
     <link rel="canonical" href="https://trekkingsentul44.com/">
     
