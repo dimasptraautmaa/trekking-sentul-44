@@ -1,5 +1,6 @@
 import React from 'react';
 import trekData from "../../../data/trekData"
+import { Helmet } from 'react-helmet';
 import { PhotoSlider } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
@@ -25,6 +26,7 @@ const Type = () => {
 
     const i = trekData[typeMap[type]] || null;
     if (!i) return window.location.href = "/"
+    const fullUrl = `https://trekkingsentul44.com/detail/${type}`;
     const images = i.img;
     const chat = `https://wa.me/6285880762819?text=${i.msg}`;
 
@@ -80,6 +82,20 @@ const Type = () => {
     }, [images.length]);
 
     return (
+        <>
+        <Helmet>
+            <title>{i.title} | Trekking Sentul 44</title>
+            <meta name="description" content={`Jalur ${i.type} - ${i.title}. ${i.jarak}, durasi ${i.waktu}. ${i.pack.join(", ")}`} />
+            <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+            <link rel="canonical" href={fullUrl} />
+
+            <meta property="og:title" content={`${i.title} | Trekking Sentul 44`} />
+            <meta property="og:description" content={`Paket ${i.title} jalur ${i.type}, rute menarik & fasilitas lengkap. Booking mudah!`} />
+            <meta property="og:type" content="article" />
+            <meta property="og:url" content={fullUrl} />
+            <meta property="og:image" content={i.img?.[0]} />
+        </Helmet>
+
         <main className='page' style={{ height: '100vh', position: 'relative' }}>
             <PhotoSlider
                 images={images.map((src) => ({ src, key: src }))}
@@ -209,6 +225,7 @@ const Type = () => {
                 </button>
             </section>
         </main>
+        </>
     );
 };
 

@@ -16,14 +16,6 @@ const Hero = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Trekking Sentul 44 - Trekking Seru dan Hemat di Sentul</title>
-        <meta
-          name="description"
-          content="Nikmati serunya trekking di Sentul bersama TrekkingSentul 44. Rute beragam, harga hemat, cocok untuk pemula dan petualang sejati. Booking mudah!"
-        />
-      </Helmet>
-
       <main className='hero'>
         <div className='hero-mark glass' style={{
           width: 'max-content',
